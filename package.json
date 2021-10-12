@@ -44,7 +44,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "version:pr": "node ./config/version-pr",
-    "postinstall": "build"
+    "prepare": "build"
   },
   "files": [
     "dist",
