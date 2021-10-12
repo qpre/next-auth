@@ -43,7 +43,8 @@
     "prepublishOnly": "npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "version:pr": "node ./config/version-pr"
+    "version:pr": "node ./config/version-pr",
+    "postinstall": "build"
   },
   "files": [
     "dist",
