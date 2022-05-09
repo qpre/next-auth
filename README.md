@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center ">
    <br/>
    <a href="https://next-auth.js.org" target="_blank"><img width="150px" src="https://next-auth.js.org/img/logo/logo-sm.png" /></a>
    <h3 align="center">NextAuth.js</h3>
@@ -155,8 +155,8 @@ Use the `<SessionProvider>` to allow instances of `useSession()` to share the se
 import { SessionProvider } from "next-auth/react"
 
 export default function App({
-  Component, 
-  pageProps: { session, ...pageProps }
+  Component,
+  pageProps: { session, ...pageProps },
 }) {
   return (
     <SessionProvider session={session}>

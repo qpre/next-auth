@@ -22,11 +22,13 @@ export default function parseProviders(params: {
     const defaultOptions = normalizeProvider(rest as Provider)
     const userOptions = normalizeProvider(options as Provider)
 
-    return merge(defaultOptions, {
+    const result = merge(defaultOptions, {
       callbackUrl: `${url}/callback/${userOptions?.id ?? rest.id}`,
       ...userOptions,
       signinUrl: `${url}/signin/${userOptions?.id ?? rest.id}`,
     })
+
+    return result;
   })
 
   const provider = providers.find(({ id }) => id === providerId)

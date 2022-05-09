@@ -48,9 +48,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "version:pr": "node ./config/version-pr",
-    "generate-providers": "node ./config/generate-providers.js",
-    "prepare": "npm run build",
-    "postinstall": "npm run build"
+    "generate-providers": "node ./config/generate-providers.js"
   },
   "files": [
     "lib",
@@ -133,7 +131,7 @@
     "whatwg-fetch": "^3.6.2"
   },
   "engines": {
-    "node": "^12.19.0 || ^14.15.0 || ^16.13.0"
+    "node": ">= 12.19.0"
   },
   "prettier": {
     "semi": false
